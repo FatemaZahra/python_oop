@@ -54,3 +54,5 @@ reptile_object = Reptile()
 print(reptile_object.eat())
 print(reptile_object.hunt())
 ```
+
+## Step 3:
