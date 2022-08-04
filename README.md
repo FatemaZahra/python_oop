@@ -56,3 +56,39 @@ print(reptile_object.hunt())
 ```
 
 ## Step 3:
+```python
+# inherit Reptile from Reptile class
+
+from reptiles import Reptile
+
+class Snake(Reptile):
+
+    def __init__(self):
+        super().__init__()
+        self.forked_tongue = True
+
+    def _use_tounge_to_smell(self):
+        try:
+            return snake_object._use_tongue_to_smell()
+
+        except AttributeError:
+            return "this information is protected"
+
+    # create 2 more functions one with _ the other with __
+    # execute them both - return message should explain Encapsulation breakdown - public -protected - private
+
+    def _snake_hunt(self):
+        return "I'm good at hunting"
+
+    def __venom(self):
+        return "A lot of venom"
+
+
+snake_object = Snake()
+
+print(snake_object.eat()) # this function is inherited from Animal
+print(snake_object.seek_heat()) #this function is inherited from Reptile class
+print(snake_object._use_tounge_to_smell()) # public
+print(snake_object._snake_hunt()) # protected
+# print(snake_object.__venom()) # private
+```
